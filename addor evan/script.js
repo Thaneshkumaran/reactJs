@@ -2,8 +2,11 @@
 function checkGuess() {
     const message = document.getElementById('message');
     const userGuess =document.getElementById('userGuess').value; 
-    if(userGuess== Number)
-    {
+    if (isNaN(userGuess) || userGuess.trim() === "") {
+        message.textContent = 'Please enter a valid number';
+        message.style.color = 'red';
+        return;
+    }
     if (userGuess %2==0) {
         message.textContent = 'The number evan';
         message.style.color = 'green';
@@ -14,8 +17,5 @@ function checkGuess() {
         message.style.color = 'green';
     }
 }
-else{
-    message.textContent = 'plasce enter vaild number';
-        message.style.color = 'red'
-}
-}
+
+
