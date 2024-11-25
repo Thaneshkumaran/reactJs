@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        .directory-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 18px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .icon-folder {
+            content: url('https://img.icons8.com/ios-filled/50/000000/folder.png');
+        }
+        .icon-file {
+            content: url('https://img.icons8.com/ios-filled/50/000000/file.png');
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>ReactJS Directory Listing</h1>
+    <div class="directory-container">
+        <!-- Replace with your folders and files -->
+        <div class="item">
+            <span class="icon icon-folder"></span>
+            <a href="folder1/">folder1/</a>
+        </div>
+        <div class="item">
+            <span class="icon icon-folder"></span>
+            <a href="folder2/">folder2/</a>
+        </div>
+        <div class="item">
+            <span class="icon icon-file"></span>
+            <a href="file1.html">file1.html</a>
+        </div>
+        <div class="item">
+            <span class="icon icon-file"></span>
+            <a href="file2.html">file2.html</a>
+        </div>
+        <!-- Add more folders and files as needed -->
+    </div>
+</body>
+</html>
