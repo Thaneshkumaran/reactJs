@@ -10,7 +10,7 @@ let isGameRunning = false;
 let currentWordIndex = 0;
 let correctWordCount = 0;
 let totalTypedWords = 0;
-
+let isCapsLockOn = false;
 const startButton = document.getElementById("startButton");
 const typingArea = document.getElementById("typingArea");
 const timeDisplay = document.getElementById("timeLeft");

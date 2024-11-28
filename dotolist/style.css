@@ -1,0 +1,18 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+body{
+    background: #000;
+    color: aqua;
+}
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
