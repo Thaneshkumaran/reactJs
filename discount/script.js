@@ -9,7 +9,6 @@ class Product {
     calculateDiscount(percentage) {
         return this.price * (percentage / 100);
     }
-
     // Method to calculate net price
     calculateNetPrice(percentage) {
         return this.price - this.calculateDiscount(percentage);

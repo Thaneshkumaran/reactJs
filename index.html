@@ -8,62 +8,103 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0073e6;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .directory-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
             padding: 20px;
         }
-        .directory-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
+
         .item {
             display: flex;
             align-items: center;
-            margin: 8px 0;
-            font-size: 18px;
+            margin: 12px 0;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+            transition: transform 0.2s, background-color 0.2s;
         }
+
+        .item:hover {
+            background-color: #f0f8ff;
+            transform: translateY(-2px);
+        }
+
         .icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 8px;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
         }
+
         .icon-folder {
-            content: url('https://img.icons8.com/ios-filled/50/000000/folder.png');
+            content: url('https://img.icons8.com/ios-filled/50/0073e6/folder.png');
         }
+
         .icon-file {
-            content: url('https://img.icons8.com/ios-filled/50/000000/file.png');
+            content: url('https://img.icons8.com/ios-filled/50/0073e6/file.png');
         }
+
         a {
             color: #0073e6;
+            font-size: 18px;
+            font-weight: 500;
             text-decoration: none;
+            transition: color 0.2s;
         }
+
         a:hover {
+            color: #005bb5;
             text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .icon {
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>ReactJS Directory Listing</h1>
+    <h1>Floder list</h1>
     <div class="directory-container">
-        <!-- Replace with your folders and files -->
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./addor evan/">0dd or even</a>
+            <a href="./addor evan/">Odd or Even</a>
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./Es6_oops/">oops</a>
+            <a href="./Es6_oops/">OOPS</a>
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./js morden varible/">variable</a>
+            <a href="./js morden varible/">Variable</a>
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./typingTest/">typing text</a>
+            <a href="./typingTest/">Typing Test</a>
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./dotolist/">do-to-list</a>
+            <a href="./dotolist/">To-Do List</a>
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
@@ -75,13 +116,12 @@
         </div>
         <div class="item">
             <span class="icon icon-file"></span>
-            <a href="./to check email or not/">to check email or not</a>
+            <a href="./to check email or not/">Check Email</a>
         </div>
-        <div>
-        <span class="icon icon-file"></span>
-        <a href="./discount/">discount</a>
-    </div>
-        <!-- Add more folders and files as needed -->
+        <div class="item">
+            <span class="icon icon-file"></span>
+            <a href="./discount/">Discount</a>
+        </div>
     </div>
 </body>
 </html>
